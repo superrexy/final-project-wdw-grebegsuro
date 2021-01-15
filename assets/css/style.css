@@ -1,0 +1,318 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Quicksand', sans-serif;
+  font-size:32px;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../img/20190826_201809.jpg);
+  background-size: cover;
+  position: relative;
+  height: 1200px;
+  margin-top: -400px;
+  text-align: center;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-5 {
+  color: white;
+  margin-top: 630px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 160%;
+}
+
+/* Tentang Page */
+.tentang h3 {
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.tentang p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.tentang img {
+  height: 90%;
+}
+
+/* Tiket Page */
+.tiket {
+  text-align: center;
+}
+
+.tiket h3{
+  font-size: 38px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.tiket h5{
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.tiket img {
+  margin: 20px 0;
+  height: 65%;
+}
+
+.tiket .reguler, .vip {
+  border-radius: 15px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Galeri */
+.galeri h3 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+.galeri p {
+  color: black;
+  text-align: center;
+}
+
+/* Lokasi */
+.lokasi h3{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+/* Jumlah Tiket */
+
+.jumlah-tiket {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: #2092E5;
+  padding-bottom: 15px;
+}
+
+#jumlahtiketbox1 {
+  margin-top: 20vh;
+}
+
+#jumlahtiketbox2 {
+  background-color: #E1E1E1;
+}
+
+/* Pilih Kursi */
+
+table {
+  text-align: center;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+td {
+  width: 50px;
+  height: 34px;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.seats {
+    border: 1px solid red;
+    background: yellow;
+}
+
+input[type=checkbox] {
+  width: 13px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 5px;
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid #ff9800;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+  -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+  -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+  background-color: #ffffff;
+}
+
+input[type=checkbox]:checked:before {
+  background-color: Green;
+  font-size: 15px;
+}
+
+.bataskursi {
+  height: 40px;
+}
+
+.screen {
+  width: 90%;
+  background: #ff9800;
+  margin: 2em 0;
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 7px;
+  word-spacing: 10px;
+  text-align: center;
+}
+
+/* Rincian */
+.rincian h4 {
+  color: black;
+}
+
+.rincian p {
+  color: black;
+}
+
+.ringkasan {
+  height: 250px;
+  background-color: white;
+}
+
+.ringkasan h4 {
+  color: black;
+  font-size: 22px;
+}
+
+.ringkasan p {
+  color: black;
+}
+
+.garis::after {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+}
+
+/* Konfirmasi */
+
+.konfirmasi p {
+  color: black;
+}
+
+.konfirmasi h5 {
+  color:black;
+}
+
+.konfirmasi h3 {
+  color:black;
+}
+
+.konfirmasi .garis::after {
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+}
+
+/* Pembayaran */
+
+.pembayaran p {
+  color: white;
+}
+
+.pembayaran h3 {
+  color: white;
+}
+
+.pembayaran label {
+  color: white;
+}
+
+/* Tambahan */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.main-background {
+  background-color: #242424;
+}
+
+h1,h2,h3,h4,h5,p,td {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer */
+
+.page2 {
+  margin-top: 33vh;
+}
+
+.page3 {
+  margin-top: 1vh;
+}
+
+.page4 {
+  margin-top: 18vh;
+}
+
+.page5{
+  margin-top: 70px;
+}
